@@ -1,5 +1,13 @@
 {
   "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
+  "python.envFile": "${workspaceFolder}/.env",
   "python.terminal.activateEnvironment": true,
-  "jupyter.notebookFileRoot": "${workspaceFolder}"
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "terminal.integrated.env.linux": {
+    "PATH": "${workspaceFolder}/venv/bin:${env:PATH}",
+    "JUPYTER_DATA_DIR": "${workspaceFolder}/venv/share/jupyter",
+    "JUPYTER_RUNTIME_DIR": "${workspaceFolder}/.jupyter-runtime",
+    "IPYTHONDIR": "${workspaceFolder}/.ipython",
+    "MPLCONFIGDIR": "${workspaceFolder}/.matplotlib-cache"
+  }
 }
